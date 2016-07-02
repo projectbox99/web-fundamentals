@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/projectbox99/web-fundamentals#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "mongodb": "^2.1.18"
   }
 }
