@@ -1,0 +1,19 @@
+{
+  "name": "web-tech",
+  "version": "1.0.0",
+  "description": "SoftUni.bg Programming Fundamentals/ Technologies course project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projectbox99/web-fundamentals.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/projectbox99/web-fundamentals/issues"
+  },
+  "homepage": "https://github.com/projectbox99/web-fundamentals#readme"
+}
