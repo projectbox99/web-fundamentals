@@ -2,9 +2,9 @@
   "name": "web-tech",
   "version": "1.0.0",
   "description": "SoftUni.bg Programming Fundamentals/ Technologies course project",
-  "main": "app.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,12 @@
   "dependencies": {
     "express": "^4.14.0",
     "mongodb": "^2.1.18",
-    "mongoose": "^4.5.3"
+    "mongoose": "^4.5.3",
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0"    
   }
 }
