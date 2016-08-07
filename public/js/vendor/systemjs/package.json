@@ -9,7 +9,7 @@
         "spec": "0.19.27",
         "type": "version"
       },
-      "D:\\projects\\web-tech"
+      "Z:\\projects\\web-tech"
     ]
   ],
   "_from": "systemjs@0.19.27",
@@ -43,7 +43,7 @@
   "_shasum": "f1740d565ce64371ac0de7072a4d1e5471ba7ba2",
   "_shrinkwrap": null,
   "_spec": "systemjs@0.19.27",
-  "_where": "D:\\projects\\web-tech",
+  "_where": "Z:\\projects\\web-tech",
   "author": {
     "name": "Guy Bedford"
   },
