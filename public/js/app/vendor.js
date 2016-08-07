@@ -1,0 +1,6 @@
+"use strict";
+require("core-js/es6");
+require("zone.js/dist/zone");
+require("reflect-meta/Reflect.js");
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInZlbmRvci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsUUFBTyxhQUFhLENBQUMsQ0FBQTtBQUNyQixRQUFPLG1CQUFtQixDQUFDLENBQUE7QUFDM0IsUUFBTyx5QkFBeUIsQ0FBQyxDQUFBIiwiZmlsZSI6InZlbmRvci5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBcImNvcmUtanMvZXM2XCI7XHJcbmltcG9ydCBcInpvbmUuanMvZGlzdC96b25lXCI7XHJcbmltcG9ydCBcInJlZmxlY3QtbWV0YS9SZWZsZWN0LmpzXCI7Il0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9
