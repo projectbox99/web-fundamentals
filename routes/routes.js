@@ -110,7 +110,7 @@ router.put('/api/user/:userId', (req, res, next) => {
 	});
 });
 
-route.delete('/api/user/:userId', (req, res, next) => {
+router.delete('/api/user/:userId', (req, res, next) => {
 	var userId = req.params.userId;
 	next();
 }, (req, res) => {

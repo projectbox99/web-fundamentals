@@ -9,7 +9,7 @@
         "spec": "2.0.0-rc.1",
         "type": "version"
       },
-      "Z:\\projects\\web-tech"
+      "D:\\projects\\web-tech"
     ]
   ],
   "_from": "@angular/http@2.0.0-rc.1",
@@ -43,7 +43,7 @@
   "_shasum": "9be6485e74f4edbcdc856f04235d9b467fc6cdeb",
   "_shrinkwrap": null,
   "_spec": "@angular/http@2.0.0-rc.1",
-  "_where": "Z:\\projects\\web-tech",
+  "_where": "D:\\projects\\web-tech",
   "author": {
     "name": "angular"
   },

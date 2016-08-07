@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "SoftUni.bg Programming Fundamentals/ Technologies course project",
   "private": true,
-  "scripts": {
-    "start": "node ./bin/www",
+  "scripts": {  
+    "start": "node ./server.js",
     "vendor": "gulp vendor",
     "gulp": "npm run vendor && gulp",
     "postinstall": "typings install",

@@ -9,7 +9,7 @@
         "spec": "2.0.0-rc.1",
         "type": "version"
       },
-      "Z:\\projects\\web-tech"
+      "D:\\projects\\web-tech"
     ]
   ],
   "_from": "@angular/upgrade@2.0.0-rc.1",
@@ -43,7 +43,7 @@
   "_shasum": "50278e5e605b9629e6130db523005951695149ee",
   "_shrinkwrap": null,
   "_spec": "@angular/upgrade@2.0.0-rc.1",
-  "_where": "Z:\\projects\\web-tech",
+  "_where": "D:\\projects\\web-tech",
   "author": {
     "name": "angular"
   },

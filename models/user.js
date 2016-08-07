@@ -1,4 +1,4 @@
-import { mongoose } from 'mongoose';
+var mongoose = require('mongoose');
 
 class User_schema extends mongoose.Schema {
 	constructor() {
@@ -12,10 +12,10 @@ class User_schema extends mongoose.Schema {
 			phone2: String,
 			skypeId: String,
 			photo: String,
-			role: { type: Number, required: true, default: 0 }
+			role: { type: Number, required: true, default: 0 },
 			dateCreated: { type: Date, required: true, default: Date.now }
 		});
 	}	// constructor()
 }	// class User_schema
 
-export default mongoose.model('User', new User_schema);
+module.exports = mongoose.model('User', new User_schema);

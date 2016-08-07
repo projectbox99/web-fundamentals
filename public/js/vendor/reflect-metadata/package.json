@@ -9,7 +9,7 @@
         "spec": ">=0.1.3 <0.2.0",
         "type": "range"
       },
-      "Z:\\projects\\web-tech"
+      "D:\\projects\\web-tech"
     ]
   ],
   "_from": "reflect-metadata@>=0.1.3 <0.2.0",
@@ -43,7 +43,7 @@
   "_shasum": "9341c2d7d3b0087893635d9ad8c050eab4712e4a",
   "_shrinkwrap": null,
   "_spec": "reflect-metadata@^0.1.3",
-  "_where": "Z:\\projects\\web-tech",
+  "_where": "D:\\projects\\web-tech",
   "author": {
     "email": "ron.buckton@microsoft.com",
     "name": "Ron Buckton",

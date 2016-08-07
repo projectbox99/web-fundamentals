@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+var mongoose = require('mongoose');
 
 class City_schema extends mongoose.Schema {
 	constructor() {
@@ -8,4 +8,4 @@ class City_schema extends mongoose.Schema {
 	}	// constructor()
 }	// class City_schema
 
-export default mongoose.model('City', new City_schema);
+module.exports = mongoose.model('City', new City_schema);

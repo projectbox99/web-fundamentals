@@ -1,4 +1,5 @@
-import mongoose from 'mongoose';
+var mongoose = require('mongoose');
+var User = require('./user');
 
 class Ad_schema extends mongoose.Schema {
 	constructor() {
@@ -9,11 +10,11 @@ class Ad_schema extends mongoose.Schema {
 			photos: [{ type: String }],
 			city: { type: String, required: true },
 			price: { type: Number, required: true },
-			owner: { type: new mongoose.Types.ObjectId, ref: 'User', required: true },
+			owner: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
 			dateCreated: { type: Date, required: true, default: Date.now },
 			dateValid: { type: Date, required: true }
 		});
 	}	// constructor()
 }	// class Ad_schema
 
-export default mongoose.model('Ad', new Ad_schema);
+module.exports = mongoose.model('Ad', new Ad_schema);

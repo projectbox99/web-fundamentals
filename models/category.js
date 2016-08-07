@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+var mongoose = require('mongoose');
 
 class Category_schema extends mongoose.Schema {
 	constructor() {
@@ -8,4 +8,4 @@ class Category_schema extends mongoose.Schema {
 	}	// constructor()
 }	// class Category_schema
 
-export default mongoose.model('Category', new Category_schema);
+module.exports = mongoose.model('Category', new Category_schema);

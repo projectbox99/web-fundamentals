@@ -9,7 +9,7 @@
         "spec": "2.0.0-rc.1",
         "type": "version"
       },
-      "Z:\\projects\\web-tech"
+      "D:\\projects\\web-tech"
     ]
   ],
   "_from": "@angular/platform-browser-dynamic@2.0.0-rc.1",
@@ -43,7 +43,7 @@
   "_shasum": "0edb02929dbe479afdfeba6a1a3b67985a8f66ff",
   "_shrinkwrap": null,
   "_spec": "@angular/platform-browser-dynamic@2.0.0-rc.1",
-  "_where": "Z:\\projects\\web-tech",
+  "_where": "D:\\projects\\web-tech",
   "author": {
     "name": "angular"
   },
