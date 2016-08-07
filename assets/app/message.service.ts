@@ -10,7 +10,7 @@ export class MessageService {
     constructor(private http: Http) {}
 
     getMessages(): Observable<any> {
-        return this.http.get('https://localhost:3000/messages')
+        return this.http.get('http://localhost:3000/messages')
             .map( (data: Response) =>  {
                 const extracted = data.json();
                 const msgArray: Message[] = [];
@@ -20,6 +20,7 @@ export class MessageService {
                     console.log(message);
                     msgArray.push(message);
                 }
+                console.log("get messages");
                 return msgArray;
             });
 
@@ -28,6 +29,7 @@ export class MessageService {
     saveMessage(message: Message): Observable<any> {
         const body = JSON.stringify(message);
         const headers = new Headers({'Content-Type': 'application/json'});
-        return this.http.post('https://localhost:3000/message', body, {headers: headers});
+        console.log("save message");
+        return this.http.post('http://localhost:3000/message', body, {headers: headers});
     }
 }

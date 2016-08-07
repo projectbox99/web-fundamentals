@@ -10,7 +10,7 @@ var appRoutes = require('./routes/app');
 
 var app = express();
 //mongoose.connect('localhost:27017/node-angular2')
-mongoose.connect('mongodb://express:87654321@ds029565.mlab.com:29565/web-tech')
+mongoose.connect('mongodb://express:87654321@ds029565.mlab.com:29565/web-tech');
 
 
 // view engine setup
