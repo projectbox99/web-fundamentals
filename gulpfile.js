@@ -8,8 +8,17 @@ var vendor = 'public/js/vendor';
 var typescript = require('gulp-typescript');
 var sourcemaps = require('gulp-sourcemaps');
 
+var tslint = require('gulp-tslint');
+
 var tsProject = typescript.createProject('tsconfig.json');
 
+gulp.task('lint', () => {
+    return gulp.src(appDev + '**/*.ts')
+        .pipe(tslint({
+            formatter: 'verbose'
+        }))
+        .pipe(tslint.report());
+});
 
 gulp.task('build-ts', function () {
     return gulp.src(appDev + '**/*.ts')

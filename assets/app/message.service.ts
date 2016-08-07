@@ -1,8 +1,8 @@
-import  { Injectable } from '@angular/core'
+import  { Injectable } from "@angular/core";
 
-import { Http, Headers, Response } from '@angular/http';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/Rx';
+import { Http, Headers, Response } from "@angular/http";
+import { Observable } from "rxjs/Observable";
+import "rxjs/Rx";
 import { Message } from "./message.model";
 
 @Injectable()
@@ -10,7 +10,7 @@ export class MessageService {
     constructor(private http: Http) {}
 
     getMessages(): Observable<any> {
-        return this.http.get('/messages')
+        return this.http.get("/messages")
             .map( (data: Response) =>  {
                 const extracted = data.json();
                 const msgArray: Message[] = [];
@@ -28,8 +28,8 @@ export class MessageService {
 
     saveMessage(message: Message): Observable<any> {
         const body = JSON.stringify(message);
-        const headers = new Headers({'Content-Type': 'application/json'});
+        const headers = new Headers({"Content-Type": "application/json"});
         console.log("save message");
-        return this.http.post('/message', body, {headers: headers});
+        return this.http.post("/message", body, {headers: headers});
     }
 }
