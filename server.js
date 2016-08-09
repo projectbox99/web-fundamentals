@@ -22,7 +22,8 @@ else
 console.info(`Connecting to MongoDB using: ${MONGODB_URI}`);
 mongoose.connect(MONGODB_URI);
 
-app.set('views', path.join(__dirname, 'views'));
+// app.set('views', path.join(__dirname, 'views'));
+app.set('views', __dirname);
 app.set('view engine', 'hbs');
 
 app.use(morgan('dev'));

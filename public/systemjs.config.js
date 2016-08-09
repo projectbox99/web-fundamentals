@@ -1,8 +1,10 @@
 // map tells the System loader where to look for things
 var map = {
     'app': 'js/app', // 'dist',
-    'rxjs': 'js/vendor/rxjs',
-    '@angular': 'js/vendor/@angular'
+    // 'rxjs': 'js/vendor/rxjs',
+    "rxjs": "js/vendor/rxjs",
+    // '@angular': 'js/vendor/@angular'
+    "@angular": "js/vendor/@angular",
 };
 
 // packages tells the System loader how to load when no filename and/or no extension
@@ -15,11 +17,12 @@ var packageNames = [
     '@angular/common',
     '@angular/compiler',
     '@angular/core',
+    '@angular/forms',
     '@angular/http',
     '@angular/platform-browser',
     '@angular/platform-browser-dynamic',
     '@angular/router',
-    '@angular/testing',
+    // '@angular/testing',
     '@angular/upgrade'
 ];
 
