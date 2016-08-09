@@ -1,3 +1,5 @@
+'use strict';
+
 var mongoose = require('mongoose');
 
 class User_schema extends mongoose.Schema {

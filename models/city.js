@@ -1,3 +1,5 @@
+'use strict';
+
 var mongoose = require('mongoose');
 
 class City_schema extends mongoose.Schema {

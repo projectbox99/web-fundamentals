@@ -1,3 +1,5 @@
+'use strict';
+
 var mongoose = require('mongoose');
 
 class Category_schema extends mongoose.Schema {
