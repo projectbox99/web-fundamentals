@@ -1,6 +1,5 @@
 # web-fundamentals
 
-Travis CI: 
 [![Build Status](https://travis-ci.org/projectbox99/web-fundamentals.svg?branch=master)](https://travis-ci.org/projectbox99/web-fundamentals)
 
 
