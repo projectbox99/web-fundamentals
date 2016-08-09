@@ -1,0 +1,17 @@
+engines:
+  eslint:
+    enabled: true
+    config:
+      config: .eslintrc
+      extensions:
+        - .es6
+        - .js
+    checks:
+      complexity:
+        enabled: true
+
+ratings:
+  paths:
+    - "models/**.js"
+    - "public/js/app/**.js"
+    - "routes/**.js"
