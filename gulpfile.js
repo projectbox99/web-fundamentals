@@ -7,6 +7,7 @@ var vendor = 'public/vendor';
 /* JS & TS */
 var typescript = require('gulp-typescript');
 var sourcemaps = require('gulp-sourcemaps');
+var Builder = require('systemjs-builder');
 
 var tslint = require('gulp-tslint');
 
@@ -66,4 +67,27 @@ gulp.task('watch', () => {
     gulp.watch(appDev + '**/*.{html,htm,css}', ['build-copy']);
 });
 
-gulp.task('default', ['watch', 'build-ts', 'build-copy']);
+/** then bundle */
+gulp.task('bundle', ['build-copy', 'vendor'], () => {
+    // optional constructor options
+    // sets the baseURL and loads the configuration file
+    var builder = new Builder('', 'dev/systemjs.config.js');
+
+    /*
+       the parameters of the below buildStatic() method are:
+           - your transcompiled application boot file (the one wich would contain the bootstrap(MyApp, [PROVIDERS]) function - in my case 'dist/app/boot.js'
+           - the output (file into which it would output the bundled code)
+           - options {}
+    */
+    return builder
+        .buildStatic(appProd + 'app/main.js', appProd + 'app/bundle.js', { minify: true, sourceMaps: true})
+        .then(function() {
+            console.log('Build complete');
+        })
+        .catch(function(err) {
+            console.log('Build error');
+            console.log(err);
+        });
+});
+
+gulp.task('default', ['watch', 'build-ts', 'build-copy', 'bundle']);

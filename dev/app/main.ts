@@ -11,6 +11,7 @@ import { APP_ROUTER_PROVIDERS } from "./app.routes";
 import "rxjs/add/operator/map";
 
 import { enableProdMode } from "@angular/core";
+
 enableProdMode();
 
 bootstrap(AppLayout, [

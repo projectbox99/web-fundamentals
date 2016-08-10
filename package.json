@@ -53,6 +53,7 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-tslint": "^6.0.2",
     "gulp-typescript": "^2.10.0",
+    "systemjs-builder": "^0.15.26",
     "tslint": "^3.14.0"
   }
 }

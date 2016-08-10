@@ -1,10 +1,9 @@
 // map tells the System loader where to look for things
 var map = {
-    'app': 'app', // 'dist',
-    // 'rxjs': 'js/vendor/rxjs',
-    "rxjs": "vendor/rxjs",
-    // '@angular': 'js/vendor/@angular'
-    "@angular": "vendor/@angular",
+    "app": "public/app", // 'dist',
+    "rxjs": "public/vendor/rxjs",
+    "@angular": "public/vendor/@angular",
+    "app-entry": "app",
 };
 
 // packages tells the System loader how to load when no filename and/or no extension
