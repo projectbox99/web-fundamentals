@@ -1,4 +1,5 @@
-/// <reference path="../typings/browser.d.ts" />
+/// <reference path="../../typings/globals/es6-shim/index.d.ts" />
+/// <reference path="../../typings/globals/jasmine/index.d.ts" />
 
 import { bootstrap } from "@angular/platform-browser-dynamic";
 import { AppLayout } from "./app.layout";

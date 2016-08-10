@@ -3,7 +3,7 @@ import { ROUTER_DIRECTIVES } from "@angular/router";
 
 @Component ({
     selector: "mean2-app",
-    templateUrl: "/js/app/app.layout.html",
+    templateUrl: "/app/app.layout.html",
     directives: [ ROUTER_DIRECTIVES ]
 })
 

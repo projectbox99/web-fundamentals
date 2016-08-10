@@ -1,8 +1,8 @@
 var gulp = require('gulp');
 
-var appDev = 'app/';
-var appProd = 'public/js/app/';
-var vendor = 'public/js/vendor';
+var appDev = 'dev/';
+var appProd = 'public/';
+var vendor = 'public/vendor';
 
 /* JS & TS */
 var typescript = require('gulp-typescript');
@@ -20,7 +20,7 @@ gulp.task('lint', () => {
         .pipe(tslint.report());
 });
 
-gulp.task('build-ts', function () {
+gulp.task('build-ts', () => {
     return gulp.src(appDev + '**/*.ts')
         .pipe(sourcemaps.init())
         .pipe(typescript(tsProject))
@@ -28,13 +28,13 @@ gulp.task('build-ts', function () {
         .pipe(gulp.dest(appProd));
 });
 
-gulp.task('build-copy', function () {
+gulp.task('build-copy', () => {
 
-    return gulp.src([appDev + '**/*.html', appDev + '**/*.htm', appDev + '**/*.css'])
+    return gulp.src([appDev + '*.*', appDev + '**/*.html', appDev + '**/*.htm', appDev + '**/*.css'])
         .pipe(gulp.dest(appProd));
 });
 
-gulp.task('vendor', function() {
+gulp.task('vendor', () => {
 
     // Angular 2 Framework
     gulp.src('node_modules/@angular/**')
@@ -61,7 +61,7 @@ gulp.task('vendor', function() {
         .pipe(gulp.dest(vendor + '/zone.js/'));
 });
 
-gulp.task('watch', function () {
+gulp.task('watch', () => {
     gulp.watch(appDev + '**/*.ts', ['build-ts']);
     gulp.watch(appDev + '**/*.{html,htm,css}', ['build-copy']);
 });
