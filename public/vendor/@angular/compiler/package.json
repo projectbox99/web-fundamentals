@@ -9,7 +9,7 @@
         "spec": "2.0.0-rc.4",
         "type": "version"
       },
-      "D:\\projects\\web-tech"
+      "Z:\\projects\\web-tech"
     ]
   ],
   "_from": "@angular/compiler@2.0.0-rc.4",
@@ -43,7 +43,7 @@
   "_shasum": "1cb82028b8ed732009cf4c82dbc7f3385dca3684",
   "_shrinkwrap": null,
   "_spec": "@angular/compiler@2.0.0-rc.4",
-  "_where": "D:\\projects\\web-tech",
+  "_where": "Z:\\projects\\web-tech",
   "author": {
     "name": "angular"
   },

@@ -9,7 +9,7 @@
         "spec": "3.0.0-beta.2",
         "type": "version"
       },
-      "D:\\projects\\web-tech"
+      "Z:\\projects\\web-tech"
     ]
   ],
   "_from": "@angular/router@3.0.0-beta.2",
@@ -43,7 +43,7 @@
   "_shasum": "99a42b8aba7cb4e2be4cde508d5f7d53f0715025",
   "_shrinkwrap": null,
   "_spec": "@angular/router@3.0.0-beta.2",
-  "_where": "D:\\projects\\web-tech",
+  "_where": "Z:\\projects\\web-tech",
   "author": {
     "name": "angular"
   },

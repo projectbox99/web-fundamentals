@@ -21,7 +21,7 @@ gulp.task('lint', () => {
         .pipe(tslint.report());
 });
 
-gulp.task('build-ts', () => {
+gulp.task('build-ts', ['lint'], () => {
     return gulp.src(appDev + '**/*.ts')
         .pipe(sourcemaps.init())
         .pipe(typescript(tsProject))
@@ -29,7 +29,7 @@ gulp.task('build-ts', () => {
         .pipe(gulp.dest(appProd));
 });
 
-gulp.task('build-copy', () => {
+gulp.task('build-copy', ['build-ts'], () => {
 
     return gulp.src([appDev + '*.*', appDev + '**/*.html', appDev + '**/*.htm', appDev + '**/*.css'])
         .pipe(gulp.dest(appProd));
@@ -68,7 +68,7 @@ gulp.task('watch', () => {
 });
 
 /** then bundle */
-gulp.task('bundle', ['build-copy', 'vendor'], () => {
+gulp.task('bundle', ['build-ts', 'build-copy', 'vendor'], () => {
     // optional constructor options
     // sets the baseURL and loads the configuration file
     var builder = new Builder('', 'dev/systemjs.config.js');
