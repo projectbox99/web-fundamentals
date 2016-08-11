@@ -2,9 +2,9 @@
 /// <reference path="../../typings/globals/jasmine/index.d.ts" />
 
 import { bootstrap } from "@angular/platform-browser-dynamic";
-import { AppLayout } from "layout/app.layout";
+import { AppLayout } from "../app/app.layout";
 import { HTTP_PROVIDERS } from "@angular/http";
-import { APP_ROUTER_PROVIDERS } from "layout/app.routes";
+import { APP_ROUTER_PROVIDERS } from "../app/app.routes";
 
 // import { disableDeprecatedForms, provideForms } from "@angular/forms";
 

@@ -1,9 +1,10 @@
 // map tells the System loader where to look for things
+var defaultJSExtensions = true;
+
 var map = {
-    "app": "public/app", // 'dist',
-    "rxjs": "public/vendor/rxjs",
-    "@angular": "public/vendor/@angular",
-    "app-entry": "app",
+    "app": "/app", // 'dist',
+    "rxjs": "node_modules/rxjs",
+    "@angular": "node_modules/@angular"
 };
 
 // packages tells the System loader how to load when no filename and/or no extension
@@ -31,6 +32,8 @@ packageNames.forEach(function (pkgName) {
 });
 
 var config = {
+    baseUrl: '/public',
+    defaultJSExtensions: defaultJSExtensions,
     map: map,
     packages: packages
 };

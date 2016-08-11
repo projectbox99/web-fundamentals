@@ -9,7 +9,7 @@
         "spec": ">=0.35.0 <0.36.0",
         "type": "range"
       },
-      "Z:\\projects\\web-tech"
+      "D:\\projects\\web-tech"
     ]
   ],
   "_from": "es6-shim@>=0.35.0 <0.36.0",
@@ -43,7 +43,7 @@
   "_shasum": "a23524009005b031ab4a352ac196dfdfd1144ab7",
   "_shrinkwrap": null,
   "_spec": "es6-shim@^0.35.0",
-  "_where": "Z:\\projects\\web-tech",
+  "_where": "D:\\projects\\web-tech",
   "author": {
     "name": "Paul Miller",
     "url": "http://paulmillr.com"

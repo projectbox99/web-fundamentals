@@ -71,7 +71,7 @@ gulp.task('watch', () => {
 gulp.task('bundle', ['build-ts', 'build-copy', 'vendor'], () => {
     // optional constructor options
     // sets the baseURL and loads the configuration file
-    var builder = new Builder('', 'dev/systemjs.config.js');
+    var builder = new Builder('', 'public/systemjs.config.js');
 
     /*
        the parameters of the below buildStatic() method are:
