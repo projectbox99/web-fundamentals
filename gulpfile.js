@@ -1,3 +1,5 @@
+'use strict';
+
 var gulp = require('gulp');
 
 var appDev = 'dev/';
@@ -71,7 +73,7 @@ gulp.task('watch', () => {
 gulp.task('bundle', ['build-ts', 'build-copy', 'vendor'], () => {
     // optional constructor options
     // sets the baseURL and loads the configuration file
-    var builder = new Builder('', 'public/systemjs.config.js');
+    var builder = new Builder('public', 'public/systemjs.config.js');
 
     /*
        the parameters of the below buildStatic() method are:
@@ -80,9 +82,23 @@ gulp.task('bundle', ['build-ts', 'build-copy', 'vendor'], () => {
            - options {}
     */
     return builder
-        .buildStatic(appProd + 'app/main.js', appProd + 'app/bundle.js', { minify: true, sourceMaps: true})
-        .then(function() {
-            console.log('Build complete');
+        .buildStatic('app/main.js', appProd + 'app/bundle.js', { minify: false, sourceMaps: true})
+        .then((result) => {
+            let count = 1;
+            console.info('Building bundle complete!');
+            console.info(`Evaluating result using obj structure: ${Object.keys(result)} ==>`);
+            console.info(`Generated bundle src: ${result.source ? true : false}`);
+            console.info(`Generated bundle source map: ${result.sourceMap ? true : false}`);
+            console.info(`Assets included in bundle: ${result.assetList ? result.assetList.length : "none"}`);
+            for (let asset of result.assetList) {
+                console.log(`${count++}.\t${asset}`);
+            }
+
+            count = 1;
+            console.info(`Modules included in bundle: ${result.modules ? result.modules.length : "none"}`);
+            for (let module of result.modules) {
+                console.log(`${count++}.\t${module}`);
+            }
         })
         .catch(function(err) {
             console.log('Build error');

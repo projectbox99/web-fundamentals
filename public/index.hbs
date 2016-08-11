@@ -11,16 +11,22 @@
 
     <script src="/vendor/zone.js/dist/zone.js"></script>
     <script src="/vendor/reflect-metadata/Reflect.js"></script>
-    <script src="/vendor/systemjs/dist/system.src.js"></script>
+    <script src="/vendor/systemjs/dist/system-csp-production.js"></script>
 
     <!-- 2. Configure SystemJS -->
-    <script src="/systemjs.config.js"></script>
+    <script>
+        System.config({
+            bundles: {
+                '/app/bundle.js': ['/app/main.js']
+            }
+        });
+    </script>
 </head>
 <body>
 <mean2-app>Loading...</mean2-app>
-<script src="/app/bundle.js"></script>
+<!-- <script src="/app/bundle.js"></script> -->
 <script>
-    System.import('/app/main.js').catch(function(err){ console.error(err);  });
+    System.import('/app/main.js').catch(function(err) { console.error(err); });
 </script>
 
 <!-- <script src="/app/main.js"></script> -->

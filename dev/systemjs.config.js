@@ -2,9 +2,9 @@
 var defaultJSExtensions = true;
 
 var map = {
-    "app": "/app", // 'dist',
-    "rxjs": "node_modules/rxjs",
-    "@angular": "node_modules/@angular"
+    "app": "app", // 'dist',
+    "rxjs": "vendor/rxjs",
+    "@angular": "vendor/@angular"
 };
 
 // packages tells the System loader how to load when no filename and/or no extension
@@ -32,7 +32,7 @@ packageNames.forEach(function (pkgName) {
 });
 
 var config = {
-    baseUrl: '/public',
+    baseUrl: 'public',
     defaultJSExtensions: defaultJSExtensions,
     map: map,
     packages: packages
